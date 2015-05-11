@@ -76,7 +76,7 @@
   'interpolation-expression' :
     'patterns': [
       {
-        'name': "interpolation.expression.embedded"
+        'name': "variable"
         'begin': '(\\$\\{)'
         'patterns': [
           {
@@ -93,7 +93,7 @@
             'name': 'delimiters.scala'
       }
       {
-        'match': '\\$(\\w+)'
+        'match': '(\\$\\w+)'
         'captures':
           '1':
             'name': 'variable'
@@ -144,7 +144,7 @@
             'name': 'delimiters.scala'
       }
       {
-        'name': "scala.string-interpolation"
+        'name': 'string.quoted.double.scala'
         'begin': '(s""")'
         'beginCaptures':
           '1':
@@ -158,7 +158,7 @@
         ]
       }
       {
-        'name': "scala.string-interpolation"
+        'name': 'string.quoted.double.scala'
         'begin': '(s")'
         'beginCaptures':
           '1':
